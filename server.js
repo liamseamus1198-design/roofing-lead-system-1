@@ -77,3 +77,4 @@ app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
     console.log(`Leads will be saved to: ${LEADS_FILE}`);
 }); 
+
