@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Storm Professional - Free Roof Evaluation | TheStormProfessional.com</title>
+    <meta name="description" content="Get your FREE roof evaluation and estimate. Professional storm damage assessment serving Sebastian, Vero Beach, Palm Bay, Satellite Beach, and Melbourne, Florida. Visit TheStormProfessional.com">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white min-h-screen">
+    <!-- Professional Header -->
+    <header class="nav-professional fixed top-0 left-0 right-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold text-blue-600">The Storm Professional</div>
+                    <div class="hidden md:block text-sm text-gray-600">Licensed Roof Inspector | TheStormProfessional.com</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="tel:954-531-8040" class="text-gray-700 hover:text-blue-600 font-semibold">
+                        <i class="fas fa-phone mr-2"></i>954-531-8040
+                    </a>
+                    <a href="#contact" class="btn-professional">
+                        Schedule Inspection
+                    </a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden fixed inset-0 z-50 bg-black/50 hidden">
+        <div class="bg-white w-80 h-full shadow-xl transform transition-transform duration-300 -translate-x-full" id="mobileMenuContent">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                                            <h3 class="text-xl font-bold text-blue-600">The Storm Professional</h3>
+                    <button id="closeMobileMenu" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="space-y-4">
+                    <a href="#contact" class="block py-3 px-4 bg-blue-600 text-white rounded-lg text-center font-semibold">
+                        Schedule Inspection
+                    </a>
+                    <a href="tel:954-531-8040" class="block py-3 px-4 border border-gray-300 rounded-lg text-center font-semibold">
+                        <i class="fas fa-phone mr-2"></i>954-531-8040
+                    </a>
+                    <div class="pt-4 border-t border-gray-200">
+                        <p class="text-sm text-gray-600">24/7 Emergency Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIRST PAGE: Enhanced Hero Section with Roof Inspector -->
+    <section class="hero-section relative flex items-center justify-center min-h-screen" style="background-image: url('/images/roofing-lead-1.jpeg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-6xl mx-auto text-center text-white">
+                <h1 class="heading-professional text-4xl md:text-6xl font-bold mb-6">
+                    Protect Your Home Before the Next Florida Storm Hits
+                </h1>
+                <p class="subheading-professional text-lg md:text-xl mb-6">
+                    Indian River County faces some of the nation's harshest weather—hurricanes, tropical storms, and even tornadoes. A damaged roof can lead to costly repairs, insurance claim denials, and unsafe living conditions.
+                </p>
+                <p class="text-base md:text-lg mb-8">
+                    Stay ahead of disaster with a <span class="font-semibold">FREE professional roof evaluation</span>. Our licensed inspectors detect hidden damage, help you meet insurance requirements, and guide you toward grant-eligible upgrades through Florida's My Safe Florida Home program.
+                </p>
+
+                <!-- Enhanced Bullet Points -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8 text-sm md:text-base">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Local storm & hail experts</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Same-day inspection scheduling</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                        <span>Licensed • Insured • 24/7 Emergency Service</span>
+                    </div>
+                </div>
+
+                <!-- Enhanced CTA Buttons -->
+                <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
+                    <a href="#contact" class="btn-professional text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-calendar-check mr-2"></i>Book My Free Inspection
+                    </a>
+                    <a href="tel:954-531-8040" class="btn-secondary-professional text-lg px-8 py-4 border-2 border-white hover:bg-white hover:text-black transition-colors">
+                        <i class="fas fa-phone mr-2"></i>Call Now: 954-531-8040
+                    </a>
+                </div>
+
+                <!-- Service Areas -->
+                <div class="mt-8 text-sm">
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Serving Sebastian, Vero Beach, Palm Bay, Satellite Beach & Melbourne</p>
+                    <p><i class="fas fa-shield-alt mr-2"></i>Licensed & Insured • 24/7 Emergency Service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storm Map Modal -->
+    <div id="stormMapModal" class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 id="stormMapTitle" class="text-2xl font-bold text-gray-900"></h3>
+                        <p id="stormMapSubtitle" class="text-gray-600"></p>
+                    </div>
+                    <button id="closeStormMap" class="text-gray-500 hover:text-gray-700 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <img id="stormMapImage" src="" alt="" class="w-full h-64 object-cover rounded-lg mb-4">
+                <div id="stormMapData" class="text-gray-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECOND PAGE: Full Image Display -->
+    <section class="hero-section relative h-screen w-full" style="background-image: url('/images/roofing-lead-2.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; margin: 0; padding: 0;">
+    </section>
+
+    <!-- THIRD PAGE: Final Professional Inspector (Temporary - using roofing-lead-1.jpeg) -->
+    <section class="hero-section relative h-screen w-full" style="background-image: url('/images/roofing-lead-1.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; margin: 0; padding: 0;">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
