@@ -1,0 +1,150 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* Custom Professional Styles */
+:root {
+    --primary-blue: #2563eb;
+    --secondary-gray: #64748b;
+    --accent-orange: #ea580c;
+    --success-green: #059669;
+    --warning-amber: #d97706;
+}
+
+/* Professional Button Styles */
+.btn-professional {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary-professional {
+    @apply bg-white hover:bg-gray-50 text-gray-800 font-semibold py-3 px-6 rounded-lg border-2 border-gray-300 transition-all duration-300 shadow-md;
+}
+
+/* Professional Card Styles */
+.card-professional {
+    @apply bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300;
+}
+
+/* Navigation Styles */
+.nav-professional {
+    @apply bg-white shadow-sm border-b border-gray-200;
+}
+
+/* Section Styles */
+.section-light {
+    @apply bg-gray-50 py-20 px-4;
+}
+
+.section-white {
+    @apply bg-white py-20 px-4;
+}
+
+/* Typography */
+.heading-professional {
+    @apply text-3xl font-bold text-gray-900 mb-4;
+}
+
+.subheading-professional {
+    @apply text-xl text-gray-600 mb-6;
+}
+
+.text-professional {
+    @apply text-gray-600 leading-relaxed;
+}
+
+/* Form Styles */
+.form-professional input,
+.form-professional select,
+.form-professional textarea {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors;
+}
+
+/* Alert Styles */
+.alert-professional {
+    @apply p-4 rounded-lg border-l-4 mb-4;
+}
+
+.alert-info {
+    @apply bg-blue-50 border-blue-400 text-blue-800;
+}
+
+.alert-warning {
+    @apply bg-amber-50 border-amber-400 text-amber-800;
+}
+
+.alert-success {
+    @apply bg-green-50 border-green-400 text-green-800;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d4ed8;
+}
+
+/* Gallery Hover Effects */
+#roofGallery img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#roofGallery button:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Lightbox Styles */
+#lightboxModal {
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .heading-professional {
+        @apply text-2xl;
+    }
+    
+    .subheading-professional {
+        @apply text-lg;
+    }
+}
+
+/* Professional Color Scheme */
+.bg-professional-blue { background-color: var(--primary-blue); }
+.text-professional-blue { color: var(--primary-blue); }
+.border-professional-blue { border-color: var(--primary-blue); }
+
+.bg-professional-gray { background-color: var(--secondary-gray); }
+.text-professional-gray { color: var(--secondary-gray); }
+
+.bg-professional-orange { background-color: var(--accent-orange); }
+.text-professional-orange { color: var(--accent-orange); }
+
+/* Focus States for Accessibility */
+.focus-professional:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Professional Gradient Backgrounds */
+.gradient-professional-blue {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.gradient-professional-dark {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
