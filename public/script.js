@@ -183,7 +183,7 @@ function initRoofGallery() {
     const photos = [
         { src: '/images/roofing-lead-1.jpeg', alt: 'Professional Roof Inspection' },
         { src: '/images/roofing-lead-1.jpeg', alt: 'Storm Damage Assessment' },
-        { src: '/images/roofing-lead-1.jpeg', alt: 'Beautiful Stone Coated Steel Roof' },
+        { src: '/images/roofing-lead-3.jpeg', alt: 'Beautiful Stone Coated Steel Roof' },
         { src: '/images/roofing-lead-1.jpeg', alt: 'Roof Repair Work' },
         { src: '/images/roofing-lead-1.jpeg', alt: 'New Roof Installation' },
         { src: '/images/roofing-lead-1.jpeg', alt: 'Quality Roofing Materials' }
